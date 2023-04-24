@@ -1,0 +1,534 @@
+object ClockForm: TClockForm
+  Left = 4366
+  Height = 401
+  Top = -294
+  Width = 412
+  BorderStyle = bsSizeToolWin
+  Caption = 'Clock'
+  ClientHeight = 401
+  ClientWidth = 412
+  DefaultMonitor = dmPrimary
+  FormStyle = fsStayOnTop
+  Menu = MainMenu
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.2.6.0'
+  object SettingsPanel: TPanel
+    Left = 0
+    Height = 137
+    Top = 264
+    Width = 412
+    Align = alBottom
+    ClientHeight = 137
+    ClientWidth = 412
+    TabOrder = 0
+    OnDblClick = ClockPanelDblClick
+    object pgctrlPrefs: TPageControl
+      Left = 1
+      Height = 135
+      Top = 1
+      Width = 410
+      ActivePage = tabGeneral
+      Align = alClient
+      TabIndex = 2
+      TabOrder = 0
+      object tabTime: TTabSheet
+        Caption = 'Time'
+        ClientHeight = 105
+        ClientWidth = 404
+        object lblTimeFontColor: TLabel
+          Left = 49
+          Height = 16
+          Top = 8
+          Width = 63
+          Caption = 'Font Color'
+          ParentColor = False
+        end
+        object FontColorButton: TColorButton
+          Left = 120
+          Height = 25
+          Top = 0
+          Width = 75
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+          OnColorChanged = FontColorButtonColorChanged
+        end
+        object lblTimeFormat: TLabel
+          Left = 36
+          Height = 16
+          Top = 80
+          Width = 76
+          Caption = 'Time Format'
+          ParentColor = False
+        end
+        object lblTimeBgColor: TLabel
+          Left = 3
+          Height = 16
+          Top = 32
+          Width = 109
+          Caption = 'Background Color'
+          ParentColor = False
+        end
+        object BackgroundColorButton: TColorButton
+          Left = 120
+          Height = 25
+          Top = 24
+          Width = 75
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBtnFace
+          OnColorChanged = BackgroundColorButtonColorChanged
+        end
+        object edtFontSize: TSpinEdit
+          Left = 120
+          Height = 21
+          Top = 51
+          Width = 66
+          OnChange = edtFontSizeChange
+          ParentFont = False
+          TabOrder = 0
+          Value = 33
+        end
+        object Label6: TLabel
+          Left = 56
+          Height = 16
+          Top = 56
+          Width = 56
+          Caption = 'Font Size'
+          ParentColor = False
+        end
+        object lblDateTimeFormatHelp1: TLabel
+          Cursor = crHandPoint
+          Left = 380
+          Height = 23
+          Top = 77
+          Width = 11
+          Anchors = [akTop, akRight]
+          Caption = '?'
+          Color = clForm
+          Font.Color = clBlue
+          Font.Height = -20
+          Font.Style = [fsBold, fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+          OnClick = lblDateTimeFormatHelpClick
+        end
+        object cbxTimeVisible: TCheckBox
+          Left = 208
+          Height = 18
+          Top = 6
+          Width = 64
+          Caption = 'Visible'
+          Checked = True
+          OnChange = cbxTimeVisibleChange
+          State = cbChecked
+          TabOrder = 1
+        end
+        object cmbTimeFormat: TComboBox
+          Left = 120
+          Height = 20
+          Top = 77
+          Width = 252
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 19
+          Items.Strings = (
+            'hh":"nn'
+            'hh'':''nnam/pm'
+            'hh'':''nna/p'
+            'hh":"nn":"ss'
+          )
+          TabOrder = 2
+          Text = 'hh":"nn":"ss'
+        end
+        object cmbTimeFontFace: TComboBox
+          Left = 192
+          Height = 20
+          Top = 51
+          Width = 199
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 19
+          OnChange = cmbTimeDateFontFaceChange
+          TabOrder = 3
+        end
+      end
+      object tabDate: TTabSheet
+        Caption = 'Date'
+        ClientHeight = 105
+        ClientWidth = 404
+        object lblDateFontColor: TLabel
+          Left = 49
+          Height = 16
+          Top = 8
+          Width = 63
+          Caption = 'Font Color'
+          ParentColor = False
+        end
+        object DateFontColor: TColorButton
+          Left = 120
+          Height = 25
+          Top = 0
+          Width = 75
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBlack
+          OnColorChanged = DateFontColorColorChanged
+        end
+        object lblDateFormat: TLabel
+          Left = 36
+          Height = 16
+          Top = 80
+          Width = 75
+          Caption = 'Date Format'
+          ParentColor = False
+        end
+        object lblDateBgColor: TLabel
+          Left = 3
+          Height = 16
+          Top = 32
+          Width = 109
+          Caption = 'Background Color'
+          ParentColor = False
+        end
+        object DateBackgroundColor: TColorButton
+          Left = 120
+          Height = 25
+          Top = 24
+          Width = 75
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clBtnFace
+          OnColorChanged = DateBackgroundColorColorChanged
+        end
+        object edtDateFontSize: TSpinEdit
+          Left = 120
+          Height = 21
+          Top = 51
+          Width = 66
+          OnChange = edtDateFontSizeChange
+          ParentFont = False
+          TabOrder = 0
+          Value = 33
+        end
+        object lblDateFontSize: TLabel
+          Left = 56
+          Height = 16
+          Top = 56
+          Width = 56
+          Caption = 'Font Size'
+          ParentColor = False
+        end
+        object lblDateTimeFormatHelp2: TLabel
+          Cursor = crHandPoint
+          Left = 380
+          Height = 23
+          Top = 77
+          Width = 11
+          Anchors = [akTop, akRight]
+          Caption = '?'
+          Color = clForm
+          Font.Color = clBlue
+          Font.Height = -20
+          Font.Style = [fsBold, fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+          OnClick = lblDateTimeFormatHelpClick
+        end
+        object cbxDateVisible: TCheckBox
+          Left = 208
+          Height = 18
+          Top = 6
+          Width = 64
+          Caption = 'Visible'
+          Checked = True
+          OnChange = cbxDateVisibleChange
+          State = cbChecked
+          TabOrder = 1
+        end
+        object cmbDateFormat: TComboBox
+          Left = 120
+          Height = 20
+          Top = 77
+          Width = 252
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 19
+          Items.Strings = (
+            'dddd mmmm dd, yyy'
+            'yyyy-mm-dd'
+            'm-d-y'
+            'm''/''d''/''y'
+          )
+          OnChange = cmbFormStyleChange
+          TabOrder = 2
+          Text = 'dddd mmmm dd, yyy'
+        end
+        object cmbDateFontFace: TComboBox
+          Left = 192
+          Height = 20
+          Top = 52
+          Width = 199
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 19
+          OnChange = cmbTimeDateFontFaceChange
+          TabOrder = 3
+        end
+      end
+      object tabGeneral: TTabSheet
+        Caption = 'General'
+        ClientHeight = 105
+        ClientWidth = 404
+        object lblSplitterColor: TLabel
+          Left = 24
+          Height = 16
+          Top = 8
+          Width = 80
+          Caption = 'Splitter Color'
+          ParentColor = False
+        end
+        object TimeDateSplitterColor: TColorButton
+          Left = 120
+          Height = 25
+          Top = 0
+          Width = 75
+          BorderWidth = 2
+          ButtonColorSize = 16
+          ButtonColor = clDefault
+          OnColorChanged = TimeDateSplitterColorColorChanged
+        end
+        object lblFormStyle: TLabel
+          Left = 39
+          Height = 16
+          Top = 32
+          Width = 65
+          Caption = 'Form Style'
+          ParentColor = False
+        end
+        object cmbFormStyle: TComboBox
+          Left = 120
+          Height = 20
+          Top = 28
+          Width = 116
+          ItemHeight = 26
+          ItemIndex = 0
+          Items.Strings = (
+            'Stay On Top'
+            'Normal'
+          )
+          OnChange = cmbFormStyleChange
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'Stay On Top'
+        end
+        object trackbarTransparency: TTrackBar
+          Left = 120
+          Height = 25
+          Top = 56
+          Width = 208
+          Max = 235
+          OnChange = trackbarTransparencyChange
+          Position = 0
+          TabOrder = 1
+        end
+        object lblFormStyle1: TLabel
+          Left = 22
+          Height = 16
+          Top = 56
+          Width = 82
+          Caption = 'Transparency'
+          ParentColor = False
+        end
+        object cbxSplitterVisible: TCheckBox
+          Left = 208
+          Height = 18
+          Top = 6
+          Width = 64
+          Caption = 'Visible'
+          Checked = True
+          OnChange = cbxSplitterVisibleChange
+          State = cbChecked
+          TabOrder = 2
+        end
+        object lblSchemes: TLabel
+          Left = 55
+          Height = 16
+          Top = 80
+          Width = 49
+          Caption = 'Scheme'
+          ParentColor = False
+        end
+        object cmbSchemes: TComboBox
+          Left = 120
+          Height = 20
+          Top = 77
+          Width = 252
+          Anchors = [akTop, akLeft, akRight]
+          ItemHeight = 19
+          OnChange = cmbSchemesChange
+          TabOrder = 3
+        end
+        object btnSaveScheme: TSpeedButton
+          Left = 376
+          Height = 22
+          Hint = 'Save all settings to scheme file for quick loading'
+          Top = 77
+          Width = 23
+          Anchors = [akTop, akRight]
+          Glyph.Data = {
+            36040000424D3604000000000000360000002800000010000000100000000100
+            2000000000000004000064000000640000000000000000000000A4653455A465
+            34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BD
+            BAFFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA46534FFA465
+            34FFA46534FFA46534FFA46534FFA46534FFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFECEE
+            EEFFECEEEEFFECEEEEFFECEEEEFFECEEEEFFA46534FF00000000A46534FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000A46534FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959F3FF5959
+            F3FF5959F3FF5959F3FF5959F3FF5959F3FFA46534FF00000000
+          }
+          OnClick = btnSaveSchemeClick
+          ShowCaption = False
+          ShowHint = True
+          ParentShowHint = False
+        end
+      end
+    end
+    object Label5: TLabel
+      Left = 56
+      Height = 16
+      Top = 208
+      Width = 210
+      Caption = 'Double-click to hide/show settings'
+      Font.Color = clGray
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = ClockPanelDblClick
+    end
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 16
+    Top = 500
+    Width = 94
+    Anchors = [akLeft, akBottom]
+    Caption = 'Clock Font Size'
+    ParentColor = False
+  end
+  object lblDateTimeFormatHelp: TLabel
+    Cursor = crHandPoint
+    Left = 483
+    Height = 16
+    Top = 72
+    Width = 7
+    Anchors = [akTop, akRight]
+    Caption = '?'
+    Color = clForm
+    Font.Color = clBlue
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+    OnClick = lblDateTimeFormatHelpClick
+  end
+  object TimeDateMainPanel: TPanel
+    Left = 0
+    Height = 264
+    Top = 0
+    Width = 412
+    Align = alClient
+    ClientHeight = 264
+    ClientWidth = 412
+    TabOrder = 1
+    object ClockPanel: TPanel
+      Left = 1
+      Height = 207
+      Hint = 'Double-click to hide/show preference panel below.'
+      Top = 1
+      Width = 410
+      Align = alClient
+      Caption = 'ClockPanel'
+      Font.Height = -44
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnDblClick = ClockPanelDblClick
+      OnMouseDown = ClockPanelMouseDown
+      OnMouseMove = ClockPanelMouseMove
+      OnMouseUp = ClockPanelMouseUp
+      OnMouseWheelDown = ClockPanelMouseWheelDown
+      OnMouseWheelUp = ClockPanelMouseWheelUp
+    end
+    object DatePanel: TPanel
+      Left = 1
+      Height = 50
+      Hint = 'Double-click to hide/show preference panel below.'
+      Top = 208
+      Width = 410
+      Align = alBottom
+      Caption = 'DatePanel'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnDblClick = ClockPanelDblClick
+      OnMouseDown = ClockPanelMouseDown
+      OnMouseMove = ClockPanelMouseMove
+      OnMouseUp = ClockPanelMouseUp
+      OnMouseWheel = DatePanelMouseWheel
+    end
+    object TimeDateSplitter: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 5
+      Top = 258
+      Width = 410
+      Align = alBottom
+      Beveled = True
+      ParentColor = False
+      ResizeAnchor = akBottom
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 144
+    Top = 8
+  end
+  object MainMenu: TMainMenu
+    Left = 176
+    Top = 104
+    object mnuPrefs: TMenuItem
+      Caption = 'Preferences'
+      OnClick = mnuPrefsClick
+      object mniShowHideClock: TMenuItem
+        Caption = 'Show/Hide Preferences'
+        OnClick = mniShowHideClockClick
+      end
+    end
+  end
+end

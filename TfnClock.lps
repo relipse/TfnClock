@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="TfnClock.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="31" Y="6"/>
+        <UsageCount Value="171"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unitmainclockform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ClockForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unitMainClockForm"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="204"/>
+        <CursorPos X="103" Y="237"/>
+        <UsageCount Value="171"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysinth.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="153"/>
+        <CursorPos X="30" Y="31"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/Applications/Lazarus/lcl/menus.pp"/>
+        <UnitName Value="Menus"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="325"/>
+        <CursorPos X="14" Y="342"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="48" Y="116"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysstr.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2354"/>
+        <CursorPos X="38" Y="2374"/>
+        <UsageCount Value="65"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="299" Column="39" TopLine="273"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="377" Column="110" TopLine="341"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="74" Column="33" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="266" Column="36" TopLine="234"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="304" Column="28" TopLine="282"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="301" Column="65" TopLine="283"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="75" Column="27" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="212" TopLine="194"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="275" Column="34" TopLine="251"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="316" Column="64" TopLine="285"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="318" Column="69" TopLine="285"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="393" Column="72" TopLine="360"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="223" Column="19" TopLine="203"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="75" Column="35" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="142" Column="4" TopLine="116"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="150" Column="10" TopLine="143"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="139" Column="108" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="409" Column="58" TopLine="400"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="459" Column="61" TopLine="438"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="25" Column="15" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="73" Column="25" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="137" Column="32" TopLine="104"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="139" Column="100" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="281" Column="15" TopLine="248"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="376" Column="52" TopLine="370"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="76" Column="35" TopLine="57"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="139" Column="17" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="76" Column="35" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="139" Column="112" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="unitmainclockform.pas"/>
+        <Caret Line="144" Column="42" TopLine="111"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
